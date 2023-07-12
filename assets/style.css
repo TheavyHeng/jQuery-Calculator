@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+body{
+  
+ background-image: url(../assets/image/llb.avif);
+ background-repeat: no-repeat;
+ width: 100%;
+ height: auto;
+ background-size: cover;
+ line-height: .2em;
+}
+.calculator {
+  background-color: rgb(86, 180, 147);
+  margin: 4em auto;
+  width: 300px;
+  border: none;
+  border-radius: 30px;
+  padding: 1em 2em;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.display {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      border: none;
+      border-radius: 20px;
+      background-color: #fff;
+      padding: 1.5em 0em;
+      margin: 20px 0 20px;
+      width: 100%;
+      text-align: right;
+      font-size: 30px;
+      box-shadow: inset -5px -5px 12px rgb(237, 253, 255),
+      inset 5px 5px 12px rgba(0,0,0,.16);
+    
+}
+.history{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: none;
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 1em 0em;
+  margin: 1px 0 1px;
+  width: 100%;
+  text-align: right;
+  font-size: 35px;
+  box-shadow: inset -5px -5px 12px rgb(237, 253, 255),
+  inset 5px 5px 12px rgba(0,0,0,.16);
+ 
+}
+
+.screen {
+  margin-bottom: 20px;
+}
+
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+button {
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 24px;
+  border-radius: 50%;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  /* box-shadow: rgb(234, 225, 214) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset; */
+  box-shadow: -5px -5px 12px rgba(70, 164, 152, 0.885),
+                  5px 5px 12px rgba(148, 185, 225, 0.16);
+  cursor: pointer;
+}
+.operator:focus {
+  background-color: #e7f30c;
+}
+.number:hover {
+  background-color:  #c2ceb7;
+}
+
+.equal {
+  background-color: rgb(233, 166, 42);
+  color: #fff;
+}
+.equal:focus {
+  background-color: orange;
+  
+}
+
+.operator {
+  background-color: rgb(241, 233, 124);
+  color: #4a7c20;
+}
+
+.clear {
+  background-color: #ff0000;
+  color: #fff;
+}
+.backspace{
+  background-color: rgb(232, 82, 31);
+  color: #fff;
+  }
+
+.decimal {
+  font-size: 24px;
+}
